@@ -1,0 +1,223 @@
+@media (max-width: 767px) {
+  main {
+    padding: 0 20px;
+  }
+
+  .features__container {
+    padding: 32px 12px 0px !important;
+
+    hr {
+      margin: 0px 0px 48px !important;
+    }
+
+    .comprehensive__row {
+      .col {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      h1 {
+        font-size: 28px;
+        text-align: left;
+      }
+    } //comprehensive__row css ends here
+  }
+
+  .features {
+    &__container {
+      padding: $section-padding-mob;
+    }
+
+    &-table {
+      margin-top: 15px;
+    }
+
+    &-col {
+      margin-bottom: 60px;
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+
+      .list-head {
+        min-height: auto;
+
+        .list {
+          max-width: 280px;
+          margin: auto;
+      
+          &-box {
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            float: left;
+            height: 105px;
+            padding: 0px;
+      
+            .list-img {
+              margin: 0 0 10px 0 !important;
+            }
+      
+            .list-content {
+              h6 {
+                text-align: center;
+              }
+        
+              p {
+                display: none;
+              }
+        
+              sup {
+                display: block;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-head {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      img {
+        width: 190px;
+        margin: 0 auto 30px;
+      }
+
+      h5 {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    .extensions__row {
+      width: 100%;
+
+      .col {
+        padding-right: 0px;
+        padding-left: 0px;
+
+        h1 {
+          font-size: 28px;
+          text-align: left;
+          margin-bottom: 32px;
+        }
+  
+        p {
+          font-size: 12px;
+          text-align: left;
+        }
+      }
+    } //extensions__row css ends here
+
+    .extensions__row2 {
+      width: 100% !important;
+      margin: auto;
+      padding-right: 0px;
+      padding-left: 0px;
+
+      .col {
+        flex: 1 1 50%;
+        padding: 0 16px 40px;
+
+        &-inner {
+          width: 80px;
+          margin: auto;
+        }
+      }
+    } //extensions__row2 css ends here
+
+    .extensions__row3 {
+      margin-bottom: 50px;
+    } //extensions__row3 css ends here
+
+    .integrations__row {
+      width: 100%;
+      margin: 40px auto 30px;
+      
+      .col {
+        flex: 1 1 50%;
+      }
+    } //integrations__row css ends here
+
+    .section__footer {
+      flex-direction: column-reverse;
+      padding: 32px 15px 24px;
+
+      h5 {
+        font-size: 20px;
+        margin: 24px 0 12px;
+      }
+
+      img {
+        width: 150px;
+      }
+    }
+  } //features css ends here
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  main {
+    padding: 0 20px;
+  }
+
+  .features__container {
+    padding: $section-padding-mob;
+  }
+
+  .features {
+    &-table {
+      display: flex;
+    }
+    
+    &-col {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+
+      .list-head {
+        min-height: 735px
+      }
+
+      .list-box {
+        .list-content {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    } //&-col css ends here
+
+    .extensions__row {
+      width: 80%;
+
+      .col {
+        h1 {
+          font-size: 32px;
+        }
+      }
+    } //extensions__row css ends
+
+    .extensions__row2 {
+      width: 95%;
+    } //extensions__row2 css ends here
+
+    .extensions__row3 {
+      margin-bottom: 50px;
+    } //extensions__row3 css ends here
+
+    .section__footer {
+      padding: 32px 15px 24px;
+    } //section__footer css ends here
+
+  } //features css ends here
+}
+
+@media (min-width: 1024px) {
+  .features {
+    &-table {
+      display: flex;
+    }
+  }
+}
+/* Features section ends */

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import 'config';
+
+body {
+  font-family: $font-stack;
+  color: $primary-color !important;
+  background-color: #ffbc66;
+}
+
+img {
+  width: 100%;
+}
+
+/* Features section starts */
+.features, .challenges {
+  border-radius: 8px;
+  .features__container { 
+    padding: 60px 0px 80px;
+
+    hr {
+      margin: 100px 0 80px;
+      border-top: 1px solid #cfd8dc;
+    }
+  }
+
+  &-table {
+    margin-top: 50px;
+    position: relative;
+
+    .col-md-4 {
+      &:nth-child(2) {
+              .list-box {
+                .list-img {
+                  background-color: #ffa000;
+  
+                  &:hover {
+                    background-color: #ff6f00;
+                  }
+                }
+              }
+            }
+  
+      &:nth-child(3) {
+        .list-box {
+          .list-img {
+            background-color: #ff8a65;
+  
+            &:hover {
+              background-color: #f4511e;
+            }
+          }
+        }
+      }
+    }
+  }
+    
+  &-col {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+
+    .list-head {
+      display: flex;
+      position: relative;
+      min-height: 700px
+    }
+
+    .list-button {
+      position: relative;
+      margin: 20px auto;
+    }
+  }
+
+  &-head {
+    margin-bottom: 40px;
+    position: relative;
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+
+  .list {
+    flex: 1;
+  
+    &-box {
+      display: flex;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      min-height: 80px;
+    }
+  
+    .list-img {
+      padding: 26px 18px;
+      display: flex;
+      align-items: center;
+      border-radius: 52px;
+      height: 52px;
+      width: 52px;
+      background-color: #ffca28;
+      color: #ffffff;
+      margin: 0 8px 0 0;
+      transition: 0.3s ease all;
+  
+      &:hover {
+        background-color: #ffa000;
+        transition: 0.3 s ease all;
+      }
+    }
+
+    .list-content {
+      h6 {
+        margin-bottom: 3px;
+  
+        sup {
+          color: #039be5;
+          margin-left: 4px;
+          font-weight: 600;
+        }
+      }
+  
+      p {
+        font-weight: 300;
+        color: #757575;
+        font-size: 14px;
+      }
+    }
+  } //first header row ends here
+
+  //extensions row starts here
+  .extensions__row {
+    width: 70%;
+    margin: 0 auto 50px;
+
+    h1 {
+      font-weight: 500 !important;
+    }
+  } // extensions__row ends here
+
+  .extensions__row2 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    .col {
+      width: 160px;
+      text-align: center;
+
+      img {
+        width: 72px;
+        margin-bottom: 15px;
+        border-radius: 50%;
+        box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15);
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  } //extensions__Row2 ends here
+
+  .integrations__row {
+    width: 100%;
+    margin: 40px auto 30px;
+    
+    .col {
+      width: 160px;
+      text-align: center;
+      margin-bottom: 20px;
+
+      img {
+        width: 60px;
+        margin-bottom: 15px;
+        // border-radius: 50%;
+        // box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 2px 6px 2px rgba(60,64,67,.15);
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  } //integrations__row css ends here
+
+  .section__footer {
+    display: flex;
+    align-items: center;
+    background-color: #eceff1;
+    padding: 32px 112px 24px;
+    margin: 0;
+    border-radius: 0px 0px 8px 8px;
+  
+    &--col1 {
+      flex: 1;
+      h5 {
+        color: $primary-color;
+      }
+    
+      p {
+        color: $secondary-color;
+      }
+    }
+
+    &--col2 {
+      flex: 1;
+      justify-content: flex-end;
+      display: flex;
+      img {
+        width: 190px;
+      }
+    }
+  } /* Section__foter css ends here */
+} /* Features section ends */
+
+@import 'challenges';
+@import 'buttons';
+@import 'utilities';
+@import 'mobile';
